@@ -1,0 +1,53 @@
+<Configuration>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CodeCleanup RecentlyUsed="Full Cleanup" />
+  <RecentFiles>
+    <RecentFiles>
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:Window1.xaml.cs" caret="0" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:Window1.xaml" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="343" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="287" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:App.config" caret="445" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:App.config" caret="425" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Properties.config" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="0" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/d:Config/f:Properties.config" caret="0" scrollPosition="0|0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="343" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="291" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="287" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:App.config" caret="445" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:App.config" caret="425" scrollPosition="0|0" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="0" />
+      <Item value="string" priority="1" />
+      <Item value="get" priority="0" />
+      <Item value="set" priority="0" />
+      <Item value="List" priority="1" />
+      <Item value="Station" priority="1" />
+      <Item value="void" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

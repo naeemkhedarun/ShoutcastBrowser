@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assemblies Version="1073741829">
+  <Assembly Name="PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Image="df271225-af28-4a76-bdc7-085db1a3ed25" Timestamp="633363386764027673" XmlDocIndexTimestamp="633265071620000000" />
+  <Assembly Name="PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Image="911cb255-75c6-4802-9102-765f5285e54f" Timestamp="633363386759191642" XmlDocIndexTimestamp="633265071640000000" />
+  <Assembly Name="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="c5a1beba-22a2-4029-b205-35ee3afe5b7b" Timestamp="633300589580000000" XmlDocIndexTimestamp="633265071640000000" />
+  <Assembly Name="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="3fe383e6-16d8-4dc2-b0d1-5e9745374d7b" Timestamp="633300589580000000" XmlDocIndexTimestamp="633265071640000000" />
+  <Assembly Name="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="ad66b88d-cf55-4261-8f50-f0b6879f061a" Timestamp="633300589580000000" XmlDocIndexTimestamp="633258169180000000" />
+  <Assembly Name="WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Image="ff3e1ce9-291b-4aac-ad03-c75e979af6c1" Timestamp="633363386757787633" XmlDocIndexTimestamp="633265071720000000" />
+  <Assembly Name="JetBrains.Annotations, Version=4.0.755.30, Culture=neutral, PublicKeyToken=1010a0d8d6380325" Image="a031dd51-03d1-428f-a27d-5f596363a722" Timestamp="633413845380000000" XmlDocIndexTimestamp="633413845380000000" />
+  <Assembly Name="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Image="2e7b0914-2461-4c75-89e5-bd13f3c613fd" Timestamp="633301045440000000" />
+  <Assembly Name="Castle.Core, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc" Image="0fb7d1ee-087c-48a6-a2bb-727e0c446eb4" Timestamp="633259093780000000" XmlDocIndexTimestamp="633427584721200000" />
+  <Assembly Name="Castle.MicroKernel, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc" Image="d85668f1-745f-4b76-a7db-4c9db283a73b" Timestamp="633259094200000000" XmlDocIndexTimestamp="633427584739200000" />
+  <Assembly Name="Castle.Windsor, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc" Image="1c0dc14c-24e5-4b26-9067-fd68cec6a0b0" Timestamp="633259094260000000" XmlDocIndexTimestamp="633427584755200000" />
+  <Assembly Name="Rhino.Mocks, Version=3.4.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f" Image="e122ddf6-78d3-422d-8557-852962bfd047" Timestamp="633389278520000000" />
+</Assemblies>
