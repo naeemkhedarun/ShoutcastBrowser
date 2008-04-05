@@ -1,8 +1,9 @@
-﻿<Application x:Class="ShoutcastBrowser.App"
+﻿<Windows:Application x:Class="ShoutcastBrowser.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    StartupUri="ShoutcastBrowser.xaml">
-    <Application.Resources>
+    xmlns:Windows="clr-namespace:System.Windows;assembly=PresentationFramework"
+    StartupUri="Window1.xaml">
+    <Windows:Application.Resources>
          
-    </Application.Resources>
-</Application>
+    </Windows:Application.Resources>
+</Windows:Application>
