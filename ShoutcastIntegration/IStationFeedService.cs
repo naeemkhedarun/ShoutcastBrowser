@@ -6,7 +6,7 @@ namespace ShoutcastIntegration
     {
         List<string> GetGenreList();
         IList<Station> GetStationList();
-        List<Station> GetStationList(string genre);
+        IList<Station> GetStationList(string genre);
         void RefreshLists();
     }
 }

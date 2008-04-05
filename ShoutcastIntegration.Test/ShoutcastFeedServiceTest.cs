@@ -25,5 +25,13 @@ namespace ShoutcastIntegration.Test
             Assert.AreEqual(2185, list.Count, "Failed to get correct number of stations.");
             Assert.AreEqual(".977 The Hitz Channel", list[0].Name, "Incorrect stations.");
         }
+
+        [TestMethod]
+        public void GetStationList_WithValidGenre_ReturnsCorrectStations()
+        {
+            IList<Station> list = stationFeedService.GetStationList("Rock");
+            Assert.AreEqual(622, list.Count, "Failed to get correct number of stations.");
+            Assert.AreEqual("Rock", list[0].Genre, "Failed to get correct genre.");
+        }
     }
 }

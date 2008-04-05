@@ -11,6 +11,7 @@ namespace ShoutcastIntegration
         {
             ConfigurationService = configurationService;
             FeedStream = feedStream;
+            CachedStations = new List<Station>();
         }
 
         public string ShoutcastPlaylistURL { get; set; }
@@ -28,8 +29,16 @@ namespace ShoutcastIntegration
 
         public IList<Station> GetStationList()
         {
-            IList<Station> stations = new List<Station>();
-            
+            return GetStationList(String.Empty);
+        }
+
+        public IList<Station> GetStationList(string genre)
+        {
+            if (CachedStations != null && CachedStations.Count > 0)
+                return CachedStations;
+
+            if (CachedStations == null) CachedStations = new List<Station>();
+
             foreach (Stream stream in FeedStream.GetStream())
             {
                 var reader = new XmlTextReader(stream);
@@ -38,30 +47,38 @@ namespace ShoutcastIntegration
                 {
                     if (reader.Name.Equals("station"))
                     {
-                        Station station = new Station();
-                        station.Name = reader["name"];
-                        station.ID = Convert.ToInt32(reader["id"]);
-                        station.Bitrate = reader["br"];
-                        station.CurrentTrack = reader["ct"];
-                        station.Genre = reader["genre"];
-                        station.TotalListeners = Convert.ToInt32(reader["tc"]);
-                        station.Type = reader["mt"];
-                        stations.Add(station);
+                        if (!String.IsNullOrEmpty(genre) && reader["genre"].Equals(genre))
+                        {
+                            PopulateStation(reader, CachedStations);
+                        }else if(String.IsNullOrEmpty(genre))
+                        {
+                            PopulateStation(reader, CachedStations);
+                        }
                     }
                     reader.Read();
                 }
             }
-            return stations;
+            return CachedStations;
         }
 
-        public List<Station> GetStationList(string genre)
+        private IList<Station> CachedStations { get; set; }
+
+        private static void PopulateStation(XmlReader reader, ICollection<Station> stations)
         {
-            throw new NotImplementedException();
+            Station station = new Station();
+            station.Name = reader["name"];
+            station.ID = Convert.ToInt32(reader["id"]);
+            station.Bitrate = reader["br"];
+            station.CurrentTrack = reader["ct"];
+            station.Genre = reader["genre"];
+            station.TotalListeners = Convert.ToInt32(reader["tc"]);
+            station.Type = reader["mt"];
+            stations.Add(station);
         }
 
         public void RefreshLists()
         {
-            throw new NotImplementedException();
+            CachedStations.Clear();
         }
 
         #endregion
