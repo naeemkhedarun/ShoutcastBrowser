@@ -21,9 +21,9 @@ namespace ShoutcastIntegration.Test
         [TestMethod]
         public void GetStationList_ValidStationFeed_ReturnsCorrectStations()
         {
-            List<Station> list = stationFeedService.GetStationList();
-            Assert.AreEqual(1000, list.Count, "Failed to get correct number of stations.");
-            Assert.AreEqual("Feed One.", list[0].Name, "Incorrect stations.");
+            IList<Station> list = stationFeedService.GetStationList();
+            Assert.AreEqual(2185, list.Count, "Failed to get correct number of stations.");
+            Assert.AreEqual(".977 The Hitz Channel", list[0].Name, "Incorrect stations.");
         }
     }
 }

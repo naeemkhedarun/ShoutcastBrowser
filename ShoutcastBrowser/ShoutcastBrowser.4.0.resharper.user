@@ -14,6 +14,7 @@
     <string />
     <integer />
     <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
@@ -22,32 +23,110 @@
     <RecentFiles>
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:Window1.xaml.cs" caret="0" scrollPosition="0|0" />
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:Window1.xaml" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="343" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="287" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:App.config" caret="445" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:App.config" caret="425" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:App.config" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IFeedStream.cs" caret="153" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Properties.config" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IConfigurationService.cs" caret="93" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:CastleWindsorFrameworkHelper.cs" caret="127" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ConfigurationServiceTest.cs" caret="582" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:App.config" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="208" scrollPosition="0|5" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:FileFeedTest.cs" caret="569" scrollPosition="3|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="373" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="240" scrollPosition="0|0" />
       <File id="98B21997-4211-480E-955F-C2964AF2EC91/d:Config/f:Properties.config" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="751" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="998" scrollPosition="0|21" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ShoutcastFeedServiceTest.cs" caret="1005" scrollPosition="0|26" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="343" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="291" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="287" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:App.config" caret="445" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:App.config" caret="425" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IFeedStream.cs" caret="151" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="753" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="753" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/d:Config/f:Properties.config" caret="247" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:CastleWindsorFrameworkHelper.cs" caret="75" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ConfigurationServiceTest.cs" caret="469" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ConfigurationServiceTest.cs" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="72" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:FileFeedTest.cs" caret="693" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:FileFeedTest.cs" caret="693" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="840" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:FileFeedTest.cs" caret="243" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="753" scrollPosition="0|3" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="753" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="753" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="208" scrollPosition="0|5" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/d:Config/f:Properties.config" caret="156" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="1284" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="1284" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="1284" scrollPosition="0|19" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="373" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="240" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="1284" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="475" scrollPosition="0|3" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="709" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ShoutcastFeedServiceTest.cs" caret="1005" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ShoutcastFeedServiceTest.cs" caret="543" scrollPosition="0|0" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ShoutcastFeedServiceTest.cs" caret="338" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="983" scrollPosition="0|21" />
+      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ShoutcastFeedServiceTest.cs" caret="981" scrollPosition="0|0" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="0" />
-      <Item value="string" priority="1" />
-      <Item value="get" priority="0" />
-      <Item value="set" priority="0" />
-      <Item value="List" priority="1" />
+      <Item value="public" priority="7" />
+      <Item value="string" priority="6" />
+      <Item value="get" priority="6" />
+      <Item value="set" priority="6" />
+      <Item value="List" priority="4" />
       <Item value="Station" priority="1" />
-      <Item value="void" priority="0" />
+      <Item value="void" priority="6" />
+      <Item value="IFeedStream" priority="2" />
+      <Item value="if" priority="0" />
+      <Item value="IsNullOrEmpty" priority="0" />
+      <Item value="Location" priority="1" />
+      <Item value="return" priority="2" />
+      <Item value="File" priority="0" />
+      <Item value="Open" priority="0" />
+      <Item value="FileMode.Open" priority="0" />
+      <Item value="Write" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="IConfigurationService" priority="2" />
+      <Item value="_feeds" priority="0" />
+      <Item value="value" priority="0" />
+      <Item value="foreach" priority="0" />
+      <Item value="ConfigurationService" priority="1" />
+      <Item value="Feeds" priority="2" />
+      <Item value="new" priority="3" />
+      <Item value="feeds" priority="1" />
+      <Item value="Add" priority="0" />
+      <Item value="feed" priority="0" />
+      <Item value="TestMethod" priority="5" />
+      <Item value="configurationService" priority="2" />
+      <Item value="Assert" priority="6" />
+      <Item value="AreEqual" priority="3" />
+      <Item value="Count" priority="1" />
+      <Item value="CastleWindsorFrameworkHelper" priority="2" />
+      <Item value="New" priority="2" />
+      <Item value="stream" priority="1" />
+      <Item value="IsNotNull" priority="2" />
+      <Item value="feedStream" priority="2" />
+      <Item value="GetStream" priority="1" />
+      <Item value="try" priority="0" />
+      <Item value="e" priority="0" />
+      <Item value="FeedStream" priority="1" />
+      <Item value="private" priority="0" />
+      <Item value="reader" priority="1" />
+      <Item value="int" priority="0" />
+      <Item value="IStationFeedService" priority="1" />
+      <Item value="service" priority="0" />
+      <Item value="feedService" priority="0" />
+      <Item value="stationFeedService" priority="3" />
+      <Item value="ShoutcastFeedService" priority="0" />
+      <Item value="GetStationList" priority="0" />
+      <Item value="list" priority="1" />
+      <Item value="Name" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

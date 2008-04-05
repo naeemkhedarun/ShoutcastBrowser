@@ -5,7 +5,7 @@ namespace ShoutcastIntegration
     public interface IStationFeedService
     {
         List<string> GetGenreList();
-        List<Station> GetStationList();
+        IList<Station> GetStationList();
         List<Station> GetStationList(string genre);
         void RefreshLists();
     }
