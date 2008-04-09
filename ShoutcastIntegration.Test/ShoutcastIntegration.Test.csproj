@@ -52,12 +52,15 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigurationServiceTest.cs" />
     <Compile Include="FileFeedTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoutcastFeedServiceTest.cs" />
+    <Compile Include="WebStreamTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

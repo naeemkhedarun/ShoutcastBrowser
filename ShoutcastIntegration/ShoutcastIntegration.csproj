@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="CastleWindsorFrameworkHelper.cs" />
     <Compile Include="ConfigurationService.cs" />
+    <Compile Include="ExecutePlaylistFile.cs" />
     <Compile Include="FileFeed.cs" />
     <Compile Include="IConfigurationService.cs" />
     <Compile Include="IFeedStream.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoutcastFeedService.cs" />
     <Compile Include="Station.cs" />
+    <Compile Include="WebStream.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

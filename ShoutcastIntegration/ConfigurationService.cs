@@ -8,6 +8,10 @@ namespace ShoutcastIntegration
 
         public List<string> Feeds { get; set; }
 
+        public string ShoutcastPlaylistURL { get; set; }
+
+        public string ShoutcastDirectoryListURL { get; set; }
+
         #endregion
     }
 }

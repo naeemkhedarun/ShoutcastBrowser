@@ -73,6 +73,7 @@ namespace ShoutcastIntegration
             station.Genre = reader["genre"];
             station.TotalListeners = Convert.ToInt32(reader["tc"]);
             station.Type = reader["mt"];
+            if(station.ID > 0)
             stations.Add(station);
         }
 
