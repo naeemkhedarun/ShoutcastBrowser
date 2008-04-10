@@ -37,17 +37,16 @@
       <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:App.config" caret="0" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="2358" scrollPosition="0|24" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Properties.config" caret="0" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Components.config" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:CastleWindsorFrameworkHelper.cs" caret="427" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ExecutePlaylistFile.cs" caret="713" scrollPosition="0|0" />
       <File id="98B21997-4211-480E-955F-C2964AF2EC91/d:Config/f:Properties.config" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="1012" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="0" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="646" scrollPosition="0|0" />
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="980" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:CastleWindsorFrameworkHelper.cs" caret="292" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Components.config" caret="263" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="0" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="471" scrollPosition="0|0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="400" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="395" scrollPosition="0|0" />
       <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:WebStreamTest.cs" caret="695" scrollPosition="0|0" />
       <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:WebStreamTest.cs" caret="695" scrollPosition="0|0" />
@@ -76,7 +75,8 @@
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="689" scrollPosition="0|0" />
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="311" scrollPosition="0|0" />
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="661" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="589" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Components.config" caret="263" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="471" scrollPosition="0|0" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
