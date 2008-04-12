@@ -27,22 +27,14 @@ namespace ShoutcastBrowser
                     direction = columnSort.LastDirection == ListSortDirection.Ascending ? ListSortDirection.Descending : ListSortDirection.Ascending;
                 }
 
-                var header = headerClicked.Column.Header as string;
-                Sort(listView, header, direction);
+                if (headerClicked.Column != null)
+                {
+                    var header = headerClicked.Column.Header as string;
+                    Sort(listView, header, direction);
 
-                //                if (direction == ListSortDirection.Ascending)
-                //                {
-                ////                    headerClicked.Column.HeaderTemplate =
-                ////                      Resources["HeaderTemplateArrowUp"] as DataTemplate;
-                //                }
-                //                else
-                //                {
-                //                    headerClicked.Column.HeaderTemplate =
-                //                      Resources["HeaderTemplateArrowDown"] as DataTemplate;
-                //                }
-
-                columnSort.LastHeaderClicked = headerClicked;
-                columnSort.LastDirection = direction;
+                    columnSort.LastHeaderClicked = headerClicked;
+                    columnSort.LastDirection = direction;
+                }
             }
         }
 

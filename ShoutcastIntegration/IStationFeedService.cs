@@ -1,12 +1,15 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using ThreadSafeCollections;
 
 namespace ShoutcastIntegration
 {
     public interface IStationFeedService
     {
         List<string> GetGenreList();
-        IList<Station> GetStationList();
-        IList<Station> GetStationList(string genre);
+        SynchronizedObservableCollection<Station> GetStationList();
+        SynchronizedObservableCollection<Station> GetStationList(GetBy parameter, string value);
+        SynchronizedObservableCollection<Station> CachedStations { get; set; }
         void RefreshLists();
     }
 }

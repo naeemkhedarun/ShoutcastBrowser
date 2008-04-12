@@ -1,86 +1,136 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Threading;
 using System.Xml;
+using ThreadSafeCollections;
 
 namespace ShoutcastIntegration
 {
     public class ShoutcastFeedService : IStationFeedService
     {
-        public ShoutcastFeedService(IConfigurationService configurationService, IFeedStream feedStream)
+        private const string DEFAULT_CMD = @"random=20";
+        private const string GENRE_CMD = @"genre={0}";
+        private const string SEARCH_CMD = @"search={0}";
+        private const string URL = @"http://www.shoutcast.com/sbin/newxml.phtml?";
+
+        public ShoutcastFeedService()
         {
-            ConfigurationService = configurationService;
-            FeedStream = feedStream;
-            CachedStations = new List<Station>();
+            CachedStations = new SynchronizedObservableCollection<Station>();
         }
 
-        public string ShoutcastPlaylistURL { get; set; }
-
-        private IFeedStream FeedStream { get; set; }
-
-        private IConfigurationService ConfigurationService { get; set; }
+        public IFeedStream FeedStream { get; set; }
 
         #region IStationFeedService Members
 
+        public SynchronizedObservableCollection<Station> CachedStations { get; set; }
+
         public List<string> GetGenreList()
         {
-            throw new NotImplementedException();
-        }
+            List<String> genres = new List<string>();
 
-        public IList<Station> GetStationList()
-        {
-            return GetStationList(String.Empty);
-        }
-
-        public IList<Station> GetStationList(string genre)
-        {
-            if (CachedStations != null && CachedStations.Count > 0)
-                return CachedStations;
-
-            if (CachedStations == null) CachedStations = new List<Station>();
-
-            foreach (Stream stream in FeedStream.GetStream())
+            XmlTextReader reader = new XmlTextReader(FeedStream.GetStream(URL));
+            while (!reader.EOF)
             {
-                var reader = new XmlTextReader(stream);
-
-                while (!reader.EOF)
+                if (reader.Name.Equals("genre"))
                 {
-                    if (reader.Name.Equals("station"))
-                    {
-                        if (!String.IsNullOrEmpty(genre) && reader["genre"].Equals(genre))
-                        {
-                            PopulateStation(reader, CachedStations);
-                        }else if(String.IsNullOrEmpty(genre))
-                        {
-                            PopulateStation(reader, CachedStations);
-                        }
-                    }
-                    reader.Read();
+                    if (genres.Count < 51) genres.Add(reader["name"]);
                 }
+                reader.Read();
             }
-            return CachedStations;
+            return genres;
         }
 
-        private IList<Station> CachedStations { get; set; }
-
-        private static void PopulateStation(XmlReader reader, ICollection<Station> stations)
+        public SynchronizedObservableCollection<Station> GetStationList()
         {
-            Station station = new Station();
-            station.Name = reader["name"];
-            station.ID = Convert.ToInt32(reader["id"]);
-            station.Bitrate = reader["br"];
-            station.CurrentTrack = reader["ct"];
-            station.Genre = reader["genre"];
-            station.TotalListeners = Convert.ToInt32(reader["tc"]);
-            station.Type = reader["mt"];
-            if(station.ID > 0)
-            stations.Add(station);
+            return GetStationList(GetBy.Default, String.Empty);
+        }
+
+        public SynchronizedObservableCollection<Station> GetStationList(GetBy parameter, string value)
+        {
+            if (CachedStations == null)
+            {
+                CachedStations = new SynchronizedObservableCollection<Station>();
+            }
+            else
+            {
+                CachedStations.Clear();
+            }
+
+            String streamURL;
+
+            switch (parameter)
+            {
+                case GetBy.Search:
+                    streamURL = String.Format(URL + SEARCH_CMD, value);
+                    break;
+                case GetBy.Genre:
+                    streamURL = String.Format(URL + GENRE_CMD, value);
+                    break;
+                case GetBy.Default:
+                    streamURL = String.Format(URL + DEFAULT_CMD);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException("parameter");
+            }
+            XmlTextReader reader = new XmlTextReader(FeedStream.GetStream(streamURL));
+
+            Thread backgroundThread = new Thread(Start);
+            backgroundThread.Start(reader);
+
+
+            return CachedStations;
         }
 
         public void RefreshLists()
         {
             CachedStations.Clear();
         }
+
+        #endregion
+
+        private void Start(object obj)
+        {
+            XmlTextReader reader = obj as XmlTextReader;
+
+            try
+            {
+                if (reader != null)
+                    while (!reader.EOF)
+                    {
+                        if (reader.Name.Equals("station"))
+                        {
+                            PopulateStation(reader, CachedStations);
+                            Console.Out.WriteLine("Found station.");
+                        }
+                        reader.Read();
+                    }
+            }
+            catch (XmlException)
+            {
+                //Invalid xml, no results.
+                CachedStations = new SynchronizedObservableCollection<Station>();
+            }
+        }
+
+        private static void PopulateStation(XmlReader reader, ICollection<Station> stations)
+        {
+            Station station = new Station
+                                  {
+                                      Name = reader["name"],
+                                      ID = Convert.ToInt32(reader["id"]),
+                                      Bitrate = reader["br"],
+                                      CurrentTrack = reader["ct"],
+                                      Genre = reader["genre"],
+                                      TotalListeners = Convert.ToInt32(reader["tc"]),
+                                      Type = reader["mt"]
+                                  };
+            if (station.ID > 0)
+                stations.Add(station);
+        }
+
+        #region Nested type: AddStation
+
+        private delegate void AddStation(Station station);
 
         #endregion
     }

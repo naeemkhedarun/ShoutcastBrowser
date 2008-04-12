@@ -18,81 +18,105 @@
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
-  <CodeCleanup RecentlyUsed="Full Cleanup" />
+  <CodeCleanup RecentlyUsed="nym">
+    <Profile name="nym">
+      <CSArrangeThisQualifier>True</CSArrangeThisQualifier>
+      <CSRemoveCodeRedundancies>True</CSRemoveCodeRedundancies>
+      <CSUseAutoProperty>True</CSUseAutoProperty>
+      <CSMakeFieldReadonly>True</CSMakeFieldReadonly>
+      <CSUseVar>
+        <BehavourStyle>CAN_CHANGE_TO_EXPLICIT</BehavourStyle>
+        <LocalVariableStyle>ALWAYS_EXPLICIT</LocalVariableStyle>
+        <ForeachVariableStyle>ALWAYS_EXPLICIT</ForeachVariableStyle>
+      </CSUseVar>
+      <CSUpdateFileHeader>False</CSUpdateFileHeader>
+      <VBOptimizeImports>False</VBOptimizeImports>
+      <VBShortenReferences>False</VBShortenReferences>
+      <CSOptimizeUsings>
+        <OptimizeUsings>True</OptimizeUsings>
+        <EmbraceInRegion>False</EmbraceInRegion>
+        <RegionName>
+        </RegionName>
+      </CSOptimizeUsings>
+      <CSShortenReferences>True</CSShortenReferences>
+      <VBReformatCode>False</VBReformatCode>
+      <CSReformatCode>True</CSReformatCode>
+      <CSReorderTypeMembers>True</CSReorderTypeMembers>
+    </Profile>
+  </CodeCleanup>
   <RecentFiles>
     <RecentFiles>
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:FileFeedTest.cs" caret="569" scrollPosition="3|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="373" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ShoutcastFeedServiceTest.cs" caret="1005" scrollPosition="0|26" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IFeedStream.cs" caret="0" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:ConfigurationServiceTest.cs" caret="0" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:App.config" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="710" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IConfigurationService.cs" caret="114" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="0" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:WebStreamTest.cs" caret="462" scrollPosition="0|0" />
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:App.config" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:WebStream.cs" caret="747" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:App.config" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="2358" scrollPosition="0|24" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Properties.config" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ExecutePlaylistFile.cs" caret="713" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/d:Config/f:Properties.config" caret="0" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="980" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:CastleWindsorFrameworkHelper.cs" caret="292" scrollPosition="0|0" />
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Components.config" caret="263" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="0" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="471" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Properties.config" caret="0" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="415" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:WebStream.cs" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IFeedStream.cs" caret="148" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:GetBy.cs" caret="123" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="395" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:CastleWindsorFrameworkHelper.cs" caret="427" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ExecutePlaylistFile.cs" caret="778" scrollPosition="0|2" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:GridViewColumnSorter.cs" caret="1040" scrollPosition="0|3" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IConfigurationService.cs" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="0" scrollPosition="0|0" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:ReadOnlySynchronizedObservableCollection.cs" caret="193" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="0" scrollPosition="0|0" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BindableCollection.cs" caret="2027" scrollPosition="0|33" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:SynchronizedObservableCollection.cs" caret="1824" scrollPosition="0|41" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="1318" scrollPosition="0|33" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="2297" scrollPosition="0|44" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="1832" scrollPosition="0|54" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="395" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:WebStreamTest.cs" caret="695" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:WebStreamTest.cs" caret="695" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:WebStreamTest.cs" caret="695" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="1218" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:WebStreamTest.cs" caret="695" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:WebStreamTest.cs" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IConfigurationService.cs" caret="268" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="400" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="395" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="357" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/d:Config/f:Properties.config" caret="505" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/d:Config/f:Properties.config" caret="805" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:WebStream.cs" caret="747" scrollPosition="0|0" />
-      <File id="98B21997-4211-480E-955F-C2964AF2EC91/f:WebStreamTest.cs" caret="587" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="1014" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Properties.config" caret="467" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="2596" scrollPosition="0|33" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="1924" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ExecutePlaylistFile.cs" caret="713" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ExecutePlaylistFile.cs" caret="713" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ExecutePlaylistFile.cs" caret="713" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ExecutePlaylistFile.cs" caret="151" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="1877" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="689" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="311" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="661" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Components.config" caret="263" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="471" scrollPosition="0|0" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BindableCollection.cs" caret="329" scrollPosition="0|10" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="691" scrollPosition="0|3" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="1822" scrollPosition="0|43" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="2750" scrollPosition="0|68" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="0" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="1513" scrollPosition="0|36" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="3456" scrollPosition="46|66" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="3456" scrollPosition="79|71" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="2910" scrollPosition="43|71" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="3281" scrollPosition="43|71" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="2679" scrollPosition="43|71" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BindableCollection.cs" caret="1045" scrollPosition="0|13" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BindableCollection.cs" caret="146" scrollPosition="0|0" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BindableCollection.cs" caret="620" scrollPosition="0|0" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BindableCollection.cs" caret="2298" scrollPosition="0|26" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="2719" scrollPosition="0|69" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="2989" scrollPosition="0|90" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="4514" scrollPosition="0|108" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="3814" scrollPosition="0|102" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="3328" scrollPosition="0|93" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BindableCollection.cs" caret="1721" scrollPosition="0|23" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BindableCollection.cs" caret="2324" scrollPosition="0|33" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BindableCollection.cs" caret="1747" scrollPosition="0|33" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="1271" scrollPosition="0|24" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="2594" scrollPosition="0|50" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="3533" scrollPosition="0|76" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="257" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="1457" scrollPosition="0|21" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="1263" scrollPosition="0|18" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="2382" scrollPosition="0|45" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="7" />
-      <Item value="string" priority="6" />
-      <Item value="get" priority="6" />
-      <Item value="set" priority="6" />
-      <Item value="List" priority="4" />
-      <Item value="Station" priority="1" />
-      <Item value="void" priority="6" />
+      <Item value="public" priority="9" />
+      <Item value="string" priority="14" />
+      <Item value="get" priority="7" />
+      <Item value="set" priority="7" />
+      <Item value="List" priority="8" />
+      <Item value="Station" priority="7" />
+      <Item value="void" priority="7" />
       <Item value="IFeedStream" priority="3" />
-      <Item value="if" priority="0" />
-      <Item value="IsNullOrEmpty" priority="0" />
+      <Item value="if" priority="2" />
+      <Item value="IsNullOrEmpty" priority="1" />
       <Item value="Location" priority="1" />
-      <Item value="return" priority="2" />
+      <Item value="return" priority="3" />
       <Item value="File" priority="0" />
       <Item value="Open" priority="0" />
       <Item value="FileMode.Open" priority="0" />
@@ -104,49 +128,128 @@
       <Item value="foreach" priority="0" />
       <Item value="ConfigurationService" priority="4" />
       <Item value="Feeds" priority="2" />
-      <Item value="new" priority="3" />
+      <Item value="new" priority="8" />
       <Item value="feeds" priority="1" />
-      <Item value="Add" priority="1" />
+      <Item value="Add" priority="6" />
       <Item value="feed" priority="0" />
       <Item value="TestMethod" priority="5" />
       <Item value="configurationService" priority="6" />
       <Item value="Assert" priority="8" />
       <Item value="AreEqual" priority="3" />
-      <Item value="Count" priority="1" />
+      <Item value="Count" priority="2" />
       <Item value="CastleWindsorFrameworkHelper" priority="2" />
       <Item value="New" priority="2" />
       <Item value="stream" priority="3" />
       <Item value="IsNotNull" priority="3" />
       <Item value="feedStream" priority="2" />
-      <Item value="GetStream" priority="2" />
-      <Item value="try" priority="0" />
-      <Item value="e" priority="0" />
-      <Item value="FeedStream" priority="1" />
-      <Item value="private" priority="0" />
-      <Item value="reader" priority="1" />
+      <Item value="GetStream" priority="4" />
+      <Item value="try" priority="1" />
+      <Item value="e" priority="2" />
+      <Item value="FeedStream" priority="3" />
+      <Item value="private" priority="5" />
+      <Item value="reader" priority="6" />
       <Item value="int" priority="0" />
-      <Item value="IStationFeedService" priority="1" />
-      <Item value="service" priority="0" />
+      <Item value="IStationFeedService" priority="2" />
+      <Item value="service" priority="1" />
       <Item value="feedService" priority="0" />
-      <Item value="stationFeedService" priority="3" />
+      <Item value="stationFeedService" priority="11" />
       <Item value="ShoutcastFeedService" priority="0" />
-      <Item value="GetStationList" priority="0" />
-      <Item value="list" priority="1" />
-      <Item value="Name" priority="0" />
+      <Item value="GetStationList" priority="2" />
+      <Item value="list" priority="5" />
+      <Item value="Name" priority="1" />
       <Item value="OpenRead" priority="0" />
       <Item value="ShoutcastDirectoryListURL" priority="0" />
       <Item value="streams" priority="0" />
-      <Item value="station" priority="0" />
+      <Item value="station" priority="2" />
       <Item value="ID" priority="0" />
-      <Item value="stationsListView" priority="0" />
-      <Item value="SelectedItem" priority="0" />
+      <Item value="stationsListView" priority="8" />
+      <Item value="SelectedItem" priority="1" />
       <Item value="client" priority="0" />
       <Item value="WebClient" priority="0" />
       <Item value="DownloadFile" priority="0" />
       <Item value="ShoutcastPlaylistURL" priority="0" />
-      <Item value="Format" priority="0" />
+      <Item value="Format" priority="3" />
       <Item value="executePlaylistFile" priority="1" />
       <Item value="ExecutePlaylist" priority="0" />
+      <Item value="URL" priority="4" />
+      <Item value="GENRE_CMD" priority="2" />
+      <Item value="Stream" priority="0" />
+      <Item value="String" priority="11" />
+      <Item value="genre" priority="0" />
+      <Item value="IList" priority="3" />
+      <Item value="enum" priority="0" />
+      <Item value="namespace" priority="0" />
+      <Item value="ShoutcastIntegration" priority="0" />
+      <Item value="GetBy" priority="1" />
+      <Item value="parameter" priority="0" />
+      <Item value="Empty" priority="3" />
+      <Item value="parameters" priority="1" />
+      <Item value="SEARCH_CMD" priority="1" />
+      <Item value="case" priority="0" />
+      <Item value="break" priority="0" />
+      <Item value="streamURL" priority="2" />
+      <Item value="genreComboBox" priority="1" />
+      <Item value="ItemsSource" priority="3" />
+      <Item value="GetGenreList" priority="2" />
+      <Item value="else" priority="1" />
+      <Item value="CachedStations" priority="6" />
+      <Item value="while" priority="2" />
+      <Item value="EOF" priority="0" />
+      <Item value="ReadStartElement" priority="0" />
+      <Item value="Equals" priority="0" />
+      <Item value="genres" priority="2" />
+      <Item value="Source" priority="0" />
+      <Item value="as" priority="9" />
+      <Item value="ComboBox" priority="0" />
+      <Item value="comboBox" priority="0" />
+      <Item value="SelectedValue" priority="0" />
+      <Item value="GetBy.Genre" priority="0" />
+      <Item value="searchTextBox" priority="2" />
+      <Item value="TextWrapping" priority="0" />
+      <Item value="searchText" priority="1" />
+      <Item value="Default" priority="0" />
+      <Item value="GetBy.Search" priority="0" />
+      <Item value="Text" priority="0" />
+      <Item value="ThreeDBorderWindow" priority="0" />
+      <Item value="mainStackPanel" priority="2" />
+      <Item value="ScrollIntoView" priority="0" />
+      <Item value="ScrollOwner" priority="0" />
+      <Item value="MouseWheel" priority="3" />
+      <Item value="Method" priority="0" />
+      <Item value="" priority="3" />
+      <Item value="Delta" priority="0" />
+      <Item value="stationsScrollViewer" priority="1" />
+      <Item value="StationsListView_OnMouseWheel" priority="0" />
+      <Item value="threadPool" priority="0" />
+      <Item value="ThreadPool" priority="0" />
+      <Item value="Thread" priority="3" />
+      <Item value="backgroundThread" priority="0" />
+      <Item value="Start" priority="1" />
+      <Item value="obj" priority="2" />
+      <Item value="XmlTextReader" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="XmlException" priority="0" />
+      <Item value="throw" priority="0" />
+      <Item value="Exception" priority="0" />
+      <Item value="ListBoxItem" priority="0" />
+      <Item value="delegate" priority="0" />
+      <Item value="AddStation" priority="6" />
+      <Item value="Delegate" priority="1" />
+      <Item value="Dele" priority="1" />
+      <Item value="object" priority="2" />
+      <Item value="Dispatcher.CurrentDispatcher" priority="3" />
+      <Item value="Dispatcher.FromThread" priority="0" />
+      <Item value="Dispatcher" priority="1" />
+      <Item value="CheckAccess" priority="0" />
+      <Item value="CurrentDispatcher" priority="0" />
+      <Item value="FromThread" priority="0" />
+      <Item value="ThreadStaticAttribute" priority="0" />
+      <Item value="CurrentThread" priority="1" />
+      <Item value="Control" priority="0" />
+      <Item value="dispatcher" priority="1" />
+      <Item value="IsAlive" priority="0" />
+      <Item value="SynchronizedObservableCollection" priority="0" />
+      <Item value="stations" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

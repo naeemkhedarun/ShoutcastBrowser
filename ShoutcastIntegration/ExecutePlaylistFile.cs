@@ -15,11 +15,14 @@ namespace ShoutcastIntegration
 
         public void ExecutePlaylist(Station station)
         {
-            //Download playlist file.
-            var client = new WebClient();
-            client.DownloadFile(String.Format(ConfigurationService.ShoutcastPlaylistURL, station.ID), "playlist.pls");
+            if (station != null)
+            {
+                //Download playlist file.
+                WebClient client = new WebClient();
+                client.DownloadFile(String.Format(ConfigurationService.ShoutcastPlaylistURL, station.ID), "playlist.pls");
 
-            Process.Start("playlist.pls");
+                Process.Start("playlist.pls");
+            }
         }
     }
 }

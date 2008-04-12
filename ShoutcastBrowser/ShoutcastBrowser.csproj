@@ -112,6 +112,10 @@
       <Project>{F21831D0-6CE5-4779-BAB1-91C191EBE206}</Project>
       <Name>ShoutcastIntegration</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ThreadSafeCollections\ThreadSafeCollections.csproj">
+      <Project>{1E83B167-2F77-4319-8968-A5287AAC8BF0}</Project>
+      <Name>ThreadSafeCollections</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
@@ -134,6 +138,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bookmarks\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

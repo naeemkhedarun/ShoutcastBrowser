@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 
 namespace ShoutcastIntegration
 {
     public interface IFeedStream
     {
-        List<Stream> GetStream();
+        Stream GetStream(string location);
     }
 }

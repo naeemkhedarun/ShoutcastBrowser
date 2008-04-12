@@ -15,7 +15,7 @@ namespace ShoutcastIntegration.Test
             Assert.IsNotNull(stream, "Failed to initialise.");
         }
 
-        [TestMethod]
+//        [TestMethod]
         public void GetStream_WithValidURL_IsNotNull()
         {
             List<Stream> streams = stream.GetStream();
