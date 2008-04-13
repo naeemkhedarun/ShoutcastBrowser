@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Net;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -26,9 +27,18 @@ namespace ShoutcastBrowser
             InitializeComponent();
             stationFeedService = CastleWindsorFrameworkHelper.New<IStationFeedService>();
             bookmarkManager = CastleWindsorFrameworkHelper.New<IBookmarkManager>();
-            genreComboBox.ItemsSource = stationFeedService.GetGenreList();
+
             bookmarksListView.ItemsSource =
                 new ReadOnlySynchronizedObservableCollection<Station>(bookmarkManager.GetBookmarkedStations());
+
+            try
+            {
+                genreComboBox.ItemsSource = stationFeedService.GetGenreList();
+            }
+            catch (Exception)
+            {
+                OfflineMessageBox();
+            }
         }
 
         #region IGridViewColumnSort Members
@@ -37,6 +47,11 @@ namespace ShoutcastBrowser
         public ListSortDirection LastDirection { get; set; }
 
         #endregion
+
+        private static void OfflineMessageBox()
+        {
+            MessageBox.Show("Unable to establish connection.", "Unable to connect.", MessageBoxButton.OK);
+        }
 
         protected override void OnClosed(EventArgs e)
         {
@@ -59,6 +74,22 @@ namespace ShoutcastBrowser
             GridViewColumnSorter.OnClictSorting(stationsListView, e, this);
         }
 
+        private void GetStations(GetBy getBy, String value, ItemsControl listView)
+        {
+            try
+            {
+                BeginInvokeOC<Station> list = stationFeedService.GetStationList(getBy, value);
+                if (listView.ItemsSource == null)
+                {
+                    listView.ItemsSource = list;
+                }
+            }
+            catch (WebException)
+            {
+                OfflineMessageBox();
+            }
+        }
+
         private void searchTextBox_PreviewKeyUp(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
@@ -66,25 +97,11 @@ namespace ShoutcastBrowser
                 String searchText = searchTextBox.Text;
                 if (String.IsNullOrEmpty(searchText))
                 {
-                    if (stationsListView.ItemsSource == null)
-                    {
-                        stationsListView.ItemsSource = stationFeedService.GetStationList(GetBy.Default, String.Empty);
-                    }
-                    else
-                    {
-                        stationFeedService.GetStationList(GetBy.Default, String.Empty);
-                    }
+                    GetStations(GetBy.Default, String.Empty, stationsListView);
                 }
                 else
                 {
-                    if (stationsListView.ItemsSource == null)
-                    {
-                        stationsListView.ItemsSource = stationFeedService.GetStationList(GetBy.Search, searchText);
-                    }
-                    else
-                    {
-                        stationFeedService.GetStationList(GetBy.Search, searchText);
-                    }
+                    GetStations(GetBy.Search, searchText, stationsListView);
                 }
             }
         }
@@ -93,14 +110,7 @@ namespace ShoutcastBrowser
         private void genreComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string genre = genreComboBox.SelectedValue as string;
-            if (stationsListView.ItemsSource == null)
-            {
-                stationsListView.ItemsSource = stationFeedService.GetStationList(GetBy.Genre, genre);
-            }
-            else
-            {
-                stationFeedService.GetStationList(GetBy.Genre, genre);
-            }
+            GetStations(GetBy.Genre, genre, stationsListView);
         }
 
         private void clearSearchButton_Click(object sender, RoutedEventArgs e)

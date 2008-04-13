@@ -88,6 +88,7 @@ namespace ShoutcastIntegration
             }
 
             shutdownThread = false;
+
             Stream _stream = FeedStream.GetStream(streamURL);
             XmlTextReader reader = new XmlTextReader(_stream);
             CachedStations.Clear();
@@ -111,31 +112,31 @@ namespace ShoutcastIntegration
 
         private void Start(object obj)
         {
-            XmlTextReader reader = obj as XmlTextReader;
-
-            try
+            using (XmlTextReader reader = obj as XmlTextReader)
             {
-                if (reader != null)
+                try
                 {
-                    while (!reader.EOF && !shutdownThread)
+                    if (reader != null)
                     {
-                        if (reader.Name.Equals("station"))
+                        while (!reader.EOF && !shutdownThread)
                         {
-                            PopulateStation(reader, CachedStations);
+                            if (reader.Name.Equals("station"))
+                            {
+                                PopulateStation(reader, CachedStations);
+                            }
+                            reader.Read();
                         }
-                        reader.Read();
+                        reader.Close();
                     }
-                    reader.Close();
                 }
-            }
-            catch (XmlException)
-            {
-                //Invalid xml, no results.
-//                CachedStations.Clear();
-            }
-            catch (WebException)
-            {
-//                CachedStations.Clear();
+                catch (XmlException)
+                {
+                    shutdownThread = true;
+                }
+                catch (WebException)
+                {
+                    shutdownThread = true;
+                }
             }
         }
 
