@@ -12,15 +12,12 @@
             <ComboBox Name="genreComboBox" 
                       SelectionChanged="genreComboBox_SelectionChanged" 
                       Width="200" />
-            <Button Name="playButton" 
-                    Width="50px" 
-                    Height="20" 
-                    Click="playButton_Click">
-                Play
-            </Button>
             <TextBox Name="searchTextBox" 
                      PreviewKeyUp="searchTextBox_PreviewKeyUp" 
-                     Width="180" />
+                     Width="180"
+                     Text="Search..."
+                     GotFocus="searchTextBox_GotFocus"
+                     LostFocus="SearchTextBox_OnLostFocus" />
             <Button Name="clearSearchButton" 
                     Click="clearSearchButton_Click" 
                     Width="20">

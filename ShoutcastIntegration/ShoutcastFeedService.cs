@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Net;
 using System.Threading;
+using System.Windows.Threading;
 using System.Xml;
 using ThreadSafeCollections;
 
@@ -12,17 +15,19 @@ namespace ShoutcastIntegration
         private const string GENRE_CMD = @"genre={0}";
         private const string SEARCH_CMD = @"search={0}";
         private const string URL = @"http://www.shoutcast.com/sbin/newxml.phtml?";
+        private Thread _backgroundThread;
+        public volatile bool shutdownThread;
 
         public ShoutcastFeedService()
         {
-            CachedStations = new SynchronizedObservableCollection<Station>();
+            CachedStations = new BeginInvokeOC<Station>(Dispatcher.CurrentDispatcher);
         }
 
         public IFeedStream FeedStream { get; set; }
 
         #region IStationFeedService Members
 
-        public SynchronizedObservableCollection<Station> CachedStations { get; set; }
+        public BeginInvokeOC<Station> CachedStations { get; set; }
 
         public List<string> GetGenreList()
         {
@@ -33,23 +38,23 @@ namespace ShoutcastIntegration
             {
                 if (reader.Name.Equals("genre"))
                 {
-                    if (genres.Count < 51) genres.Add(reader["name"]);
+                    genres.Add(reader["name"]);
                 }
                 reader.Read();
             }
             return genres;
         }
 
-        public SynchronizedObservableCollection<Station> GetStationList()
+        public BeginInvokeOC<Station> GetStationList()
         {
             return GetStationList(GetBy.Default, String.Empty);
         }
 
-        public SynchronizedObservableCollection<Station> GetStationList(GetBy parameter, string value)
+        public BeginInvokeOC<Station> GetStationList(GetBy parameter, string value)
         {
             if (CachedStations == null)
             {
-                CachedStations = new SynchronizedObservableCollection<Station>();
+                CachedStations = new BeginInvokeOC<Station>(Dispatcher.CurrentDispatcher);
             }
             else
             {
@@ -72,11 +77,22 @@ namespace ShoutcastIntegration
                 default:
                     throw new ArgumentOutOfRangeException("parameter");
             }
-            XmlTextReader reader = new XmlTextReader(FeedStream.GetStream(streamURL));
 
-            Thread backgroundThread = new Thread(Start);
-            backgroundThread.Start(reader);
+            if (_backgroundThread != null && _backgroundThread.IsAlive)
+            {
+                shutdownThread = true;
+                while (_backgroundThread.IsAlive)
+                {
+                    Thread.Sleep(5);
+                }
+            }
 
+            shutdownThread = false;
+            Stream _stream = FeedStream.GetStream(streamURL);
+            XmlTextReader reader = new XmlTextReader(_stream);
+            CachedStations.Clear();
+            _backgroundThread = new Thread(Start) {Priority = ThreadPriority.BelowNormal};
+            _backgroundThread.Start(reader);
 
             return CachedStations;
         }
@@ -84,6 +100,11 @@ namespace ShoutcastIntegration
         public void RefreshLists()
         {
             CachedStations.Clear();
+        }
+
+        public void ShutdownService()
+        {
+            shutdownThread = true;
         }
 
         #endregion
@@ -95,20 +116,26 @@ namespace ShoutcastIntegration
             try
             {
                 if (reader != null)
-                    while (!reader.EOF)
+                {
+                    while (!reader.EOF && !shutdownThread)
                     {
                         if (reader.Name.Equals("station"))
                         {
                             PopulateStation(reader, CachedStations);
-                            Console.Out.WriteLine("Found station.");
                         }
                         reader.Read();
                     }
+                    reader.Close();
+                }
             }
             catch (XmlException)
             {
                 //Invalid xml, no results.
-                CachedStations = new SynchronizedObservableCollection<Station>();
+//                CachedStations.Clear();
+            }
+            catch (WebException)
+            {
+//                CachedStations.Clear();
             }
         }
 
@@ -118,7 +145,7 @@ namespace ShoutcastIntegration
                                   {
                                       Name = reader["name"],
                                       ID = Convert.ToInt32(reader["id"]),
-                                      Bitrate = reader["br"],
+                                      Bitrate = Convert.ToInt32(reader["br"]),
                                       CurrentTrack = reader["ct"],
                                       Genre = reader["genre"],
                                       TotalListeners = Convert.ToInt32(reader["tc"]),
@@ -129,8 +156,6 @@ namespace ShoutcastIntegration
         }
 
         #region Nested type: AddStation
-
-        private delegate void AddStation(Station station);
 
         #endregion
     }

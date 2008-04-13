@@ -42,7 +42,7 @@ namespace ShoutcastIntegration
 
             newBookmarkNode.Attributes.Append(CreateAttribute(document, "name", station.Name));
             newBookmarkNode.Attributes.Append(CreateAttribute(document, "id", station.ID.ToString()));
-            newBookmarkNode.Attributes.Append(CreateAttribute(document, "br", station.Bitrate));
+            newBookmarkNode.Attributes.Append(CreateAttribute(document, "br", station.Bitrate.ToString()));
             newBookmarkNode.Attributes.Append(CreateAttribute(document, "ct", station.CurrentTrack));
             newBookmarkNode.Attributes.Append(CreateAttribute(document, "genre", station.Genre));
             newBookmarkNode.Attributes.Append(CreateAttribute(document, "tc", station.TotalListeners.ToString()));
@@ -88,7 +88,7 @@ namespace ShoutcastIntegration
                                   {
                                       Name = reader["name"],
                                       ID = Convert.ToInt32(reader["id"]),
-                                      Bitrate = reader["br"],
+                                      Bitrate = Convert.ToInt32(reader["br"]),
                                       CurrentTrack = reader["ct"],
                                       Genre = reader["genre"],
                                       TotalListeners = Convert.ToInt32(reader["tc"]),

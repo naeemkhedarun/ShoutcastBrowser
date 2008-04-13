@@ -54,7 +54,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeginInvokeOC.cs" />
     <Compile Include="BindableCollection.cs" />
+    <Compile Include="SynchronizedBindableCollection.cs" />
     <Compile Include="ReadOnlySynchronizedObservableCollection.cs" />
     <Compile Include="SynchronizedObservableCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
