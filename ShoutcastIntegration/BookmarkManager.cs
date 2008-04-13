@@ -9,6 +9,11 @@ namespace ShoutcastIntegration
     {
         private SynchronizedObservableCollection<Station> _bookmarks;
 
+        public BookmarkManager()
+        {
+            _bookmarks = new SynchronizedObservableCollection<Station>();
+        }
+
 
         public IFeedStream FeedStream { get; set; }
 
@@ -82,8 +87,6 @@ namespace ShoutcastIntegration
 
         private void AddBookmark(XmlReader reader)
         {
-            if (_bookmarks == null) _bookmarks = new SynchronizedObservableCollection<Station>();
-
             Station station = new Station
                                   {
                                       Name = reader["name"],

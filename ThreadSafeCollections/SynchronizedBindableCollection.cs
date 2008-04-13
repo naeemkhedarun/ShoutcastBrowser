@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Windows.Threading;
@@ -32,38 +31,37 @@ namespace ThreadSafeCollections
             INotifyCollectionChanged collectionChanged = list as INotifyCollectionChanged;
             if (collectionChanged != null)
                 collectionChanged.CollectionChanged += CollectionChanged_OnCollectionChanged;
-
         }
 
         private void CollectionChanged_OnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
-            switch(e.Action)
+            switch (e.Action)
             {
                 case NotifyCollectionChangedAction.Add:
-                    foreach (var newItem in e.NewItems)
+                    foreach (object newItem in e.NewItems)
                     {
                         list.Add((T) newItem);
                     }
                     break;
                 case NotifyCollectionChangedAction.Remove:
-                    foreach (var oldItem in e.OldItems)
+                    foreach (object oldItem in e.OldItems)
                     {
                         list.Remove((T) oldItem);
                     }
                     break;
                 case NotifyCollectionChangedAction.Replace:
                     throw new ArgumentOutOfRangeException();
-                    break;
                 case NotifyCollectionChangedAction.Move:
                     throw new ArgumentOutOfRangeException();
-                    break;
                 case NotifyCollectionChangedAction.Reset:
                     list.Clear();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
-            Dispatcher.CurrentDispatcher.BeginInvoke(DispatcherPriority.Normal, new RaiseCollectionChangedEventHandler(RaiseCollectionChangedEvent), e);                 
+            Dispatcher.CurrentDispatcher.BeginInvoke(DispatcherPriority.Normal,
+                                                     new RaiseCollectionChangedEventHandler(RaiseCollectionChangedEvent),
+                                                     e);
         }
 
         #endregion
@@ -244,12 +242,6 @@ namespace ThreadSafeCollections
         #region Nested type: RaiseCollectionChangedEventHandler
 
         private delegate void RaiseCollectionChangedEventHandler(NotifyCollectionChangedEventArgs e);
-
-        #endregion
-
-        #region Nested type: RaisePropertyChangedEventHandler
-
-        private delegate void RaisePropertyChangedEventHandler(PropertyChangedEventArgs e);
 
         #endregion
     }
