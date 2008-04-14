@@ -1,0 +1,33 @@
+Mouse wheel over gridview scrolls properly.
+Ctrl-F Filter list.
+Record functionality.
+Disable multi select on gridview.
+Show/Hide columns.
+
+Configuration Screen{
+	Browse to select default player.
+	Offline stations, hide, put at bottom, always check, check before play, never.
+	Record config.
+}
+
+Autocheck stations online. Colour online stations green.
+Hide offline stations.
+Manually add bookmark.
+
+Google stations.
+xiph.
+live365.
+basic.ch
+punkcast.com
+Combined stations view.
+
+Highlight column on sorting.
+Column widths stretch.
+
+---------------------------------------------------
+
+References:
+http://www.beacosta.com/blog/?m=200609
+http://www.ontheblog.net/CMS/Home/tabid/36/EntryID/37/Default.aspx
+http://www.nongnu.org/streamtuner/
+
