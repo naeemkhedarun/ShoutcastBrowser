@@ -30,4 +30,4 @@ References:
 http://www.beacosta.com/blog/?m=200609
 http://www.ontheblog.net/CMS/Home/tabid/36/EntryID/37/Default.aspx
 http://www.nongnu.org/streamtuner/
-
+http://blog.galasoft.ch/archive/2008/03/24/silverlight-the-power-of-skinning-by-corrina-barber.aspx
