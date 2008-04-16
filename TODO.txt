@@ -24,6 +24,7 @@ Combined stations view.
 Highlight column on sorting.
 Column widths stretch.
 
+Pause functionality?
 ---------------------------------------------------
 
 References:
