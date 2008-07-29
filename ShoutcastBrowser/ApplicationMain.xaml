@@ -50,6 +50,9 @@
                                 <GridViewColumn Header="Genre" 
                                         DisplayMemberBinding="{Binding Genre}">
                                 </GridViewColumn>
+                                <GridViewColumn Header="Alive" 
+                                        DisplayMemberBinding="{Binding IsAlive}">
+                                </GridViewColumn>
                             </GridView>
                         </ListView.View>
                     </ListView>

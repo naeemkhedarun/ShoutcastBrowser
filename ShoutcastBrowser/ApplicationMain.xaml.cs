@@ -16,8 +16,8 @@ namespace ShoutcastBrowser
     {
         private static readonly Application _app = new Application();
 
-        private readonly ExecutePlaylistFile _executePlaylistFile =
-            CastleWindsorFrameworkHelper.New<ExecutePlaylistFile>();
+        private readonly PlaylistFile playlistFile =
+            CastleWindsorFrameworkHelper.New<PlaylistFile>();
 
         private readonly IBookmarkManager bookmarkManager;
         private readonly IStationFeedService stationFeedService;
@@ -26,6 +26,7 @@ namespace ShoutcastBrowser
         {
             InitializeComponent();
             stationFeedService = CastleWindsorFrameworkHelper.New<IStationFeedService>();
+            StationConnectionChecker stationConnectionChecker = new StationConnectionChecker(stationFeedService, CastleWindsorFrameworkHelper.New<IConfigurationService>());
             bookmarkManager = CastleWindsorFrameworkHelper.New<IBookmarkManager>();
 
             bookmarksListView.ItemsSource =
@@ -122,7 +123,7 @@ namespace ShoutcastBrowser
         {
             Station station = stationsListView.SelectedItem as Station;
 
-            _executePlaylistFile.ExecutePlaylist(station);
+            playlistFile.ExecutePlaylist(station);
         }
 
         private void bookmarkMenuItem_Click(object sender, RoutedEventArgs e)
@@ -140,7 +141,7 @@ namespace ShoutcastBrowser
         {
             Station station = bookmarksListView.SelectedItem as Station;
 
-            _executePlaylistFile.ExecutePlaylist(station);
+            playlistFile.ExecutePlaylist(station);
         }
 
         private void RemoveMenuItem_OnClick(object sender, RoutedEventArgs e)

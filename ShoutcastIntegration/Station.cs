@@ -9,5 +9,6 @@
         public string CurrentTrack { get; set; }
         public int TotalListeners { get; set; }
         public int ID { get; set; }
+        public bool IsAlive { get; set; }
     }
 }

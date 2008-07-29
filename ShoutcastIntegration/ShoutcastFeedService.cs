@@ -153,7 +153,9 @@ namespace ShoutcastIntegration
                                       Type = reader["mt"]
                                   };
             if (station.ID > 0)
+            {
                 stations.Add(station);
+            }
         }
 
         #region Nested type: AddStation

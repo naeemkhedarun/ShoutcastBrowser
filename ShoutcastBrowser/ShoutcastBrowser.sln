@@ -11,13 +11,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
 		ShoutcastBrowser.vsmdi = ShoutcastBrowser.vsmdi
+		ShoutcastBrowser1.vsmdi = ShoutcastBrowser1.vsmdi
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSafeCollections", "..\ThreadSafeCollections\ThreadSafeCollections.csproj", "{1E83B167-2F77-4319-8968-A5287AAC8BF0}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ShoutcastBrowserSetup", "..\ShoutcastBrowserSetup\ShoutcastBrowserSetup.vdproj", "{890E01D2-6831-464C-BD21-757DCAD84550}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortProberLib", "..\PortProber\PortProberLib.csproj", "{EEE5CFC0-1A50-4E16-88D9-00EE8368BECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortProberLibTest", "..\PortProberLibTest\PortProberLibTest.csproj", "{31E2AB3F-0CDC-4867-8077-D74CA2234722}"
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ShoutcastBrowser1.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -41,6 +49,14 @@ Global
 		{1E83B167-2F77-4319-8968-A5287AAC8BF0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{890E01D2-6831-464C-BD21-757DCAD84550}.Debug|Any CPU.ActiveCfg = Debug
 		{890E01D2-6831-464C-BD21-757DCAD84550}.Release|Any CPU.ActiveCfg = Release
+		{EEE5CFC0-1A50-4E16-88D9-00EE8368BECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE5CFC0-1A50-4E16-88D9-00EE8368BECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE5CFC0-1A50-4E16-88D9-00EE8368BECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE5CFC0-1A50-4E16-88D9-00EE8368BECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E2AB3F-0CDC-4867-8077-D74CA2234722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E2AB3F-0CDC-4867-8077-D74CA2234722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E2AB3F-0CDC-4867-8077-D74CA2234722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E2AB3F-0CDC-4867-8077-D74CA2234722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

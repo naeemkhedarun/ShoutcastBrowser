@@ -111,7 +111,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ShoutcastBrowser_TemporaryKey.pfx" />
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
