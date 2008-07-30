@@ -51,7 +51,7 @@
                                         DisplayMemberBinding="{Binding Genre}">
                                 </GridViewColumn>
                                 <GridViewColumn Header="Alive" 
-                                        DisplayMemberBinding="{Binding IsAlive}">
+                                        DisplayMemberBinding="{Binding IsAliveString}">
                                 </GridViewColumn>
                             </GridView>
                         </ListView.View>

@@ -12,7 +12,6 @@
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Properties.config" caret="415" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IFeedStream.cs" caret="148" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ConfigurationService.cs" caret="395" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:GridViewColumnSorter.cs" caret="1040" scrollPosition="0|3" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IConfigurationService.cs" caret="0" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:FileFeed.cs" caret="200" scrollPosition="0|0" />
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:IGridViewColumnSort.cs" caret="116" scrollPosition="0|0" />
@@ -21,9 +20,7 @@
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:BookmarkManager.cs" caret="252" scrollPosition="0|6" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IBookmarkManager.cs" caret="243" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:WebStream.cs" caret="328" scrollPosition="0|0" />
-      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BeginInvokeOC.cs" caret="1261" scrollPosition="0|12" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:CastleWindsorFrameworkHelper.cs" caret="441" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="0" scrollPosition="0|0" />
       <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:SynchronizedBindableCollection.cs" caret="6747" scrollPosition="0|239" />
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Bookmarks/f:bookmarks.xml" caret="413" scrollPosition="0|0" />
       <File id="31E2AB3F-0CDC-4867-8077-D74CA2234722/f:PortProberTest.cs" caret="1436" scrollPosition="0|0" />
@@ -31,32 +28,25 @@
       <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:SynchronizedObservableCollection.cs" caret="272" scrollPosition="0|0" />
       <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="1522" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:GetBy.cs" caret="0" scrollPosition="0|0" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="412" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:IStationFeedService.cs" caret="0" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="871" scrollPosition="0|0" />
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/d:Config/f:Components.config" caret="0" scrollPosition="0|0" />
-      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="2426" scrollPosition="0|57" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:PlaylistFile.cs" caret="430" scrollPosition="0|15" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="290" scrollPosition="0|2" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:StationConnectionChecker.cs" caret="1446" scrollPosition="0|17" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:GridViewColumnSorter.cs" caret="647" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="2432" scrollPosition="0|52" />
+      <File id="1E83B167-2F77-4319-8968-A5287AAC8BF0/f:BeginInvokeOC.cs" caret="1656" scrollPosition="0|22" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="832" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="3646" scrollPosition="0|87" />
     </RecentFiles>
     <RecentEdits>
-      <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="1540" scrollPosition="0|0" />
-      <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="1540" scrollPosition="0|0" />
-      <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="1522" scrollPosition="0|6" />
-      <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="1522" scrollPosition="0|9" />
-      <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:PortProber.cs" caret="1592" scrollPosition="0|6" />
-      <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:PortProber.cs" caret="1592" scrollPosition="0|6" />
-      <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:PortProber.cs" caret="1592" scrollPosition="0|21" />
-      <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:PortProber.cs" caret="725" scrollPosition="0|30" />
-      <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="1522" scrollPosition="0|23" />
       <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="1522" scrollPosition="0|8" />
       <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="1522" scrollPosition="0|11" />
       <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="1522" scrollPosition="0|8" />
       <File id="EEE5CFC0-1A50-4E16-88D9-00EE8368BECA/f:ThreadedPortProber.cs" caret="688" scrollPosition="0|8" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:PlaylistFile.cs" caret="121" scrollPosition="0|3" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:PlaylistFile.cs" caret="775" scrollPosition="0|9" />
-      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="412" scrollPosition="0|0" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:ShoutcastFeedService.cs" caret="5165" scrollPosition="0|144" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:StationConnectionChecker.cs" caret="3331" scrollPosition="0|18" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:StationConnectionChecker.cs" caret="3331" scrollPosition="31|6" />
@@ -71,19 +61,30 @@
       <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml.cs" caret="1061" scrollPosition="49|9" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/d:Config/f:Components.config" caret="1383" scrollPosition="0|15" />
       <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:StationConnectionChecker.cs" caret="1038" scrollPosition="0|17" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="1251" scrollPosition="0|0" />
+      <File id="2E79A872-1596-4C2A-B6A5-2E24A63ECD4E/f:ApplicationMain.xaml" caret="2780" scrollPosition="0|39" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="1251" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="1251" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="1251" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="1251" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="1251" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="141" scrollPosition="0|9" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="534" scrollPosition="0|0" />
+      <File id="F21831D0-6CE5-4779-BAB1-91C191EBE206/f:Station.cs" caret="797" scrollPosition="0|0" />
     </RecentEdits>
   </RecentFiles>
-  <NAntValidationSettings>
-    <NAntPath value="" />
-  </NAntValidationSettings>
   <SettingsComponent>
     <string />
     <integer />
     <boolean>
       <setting name="livetemplates.csharp.usevar">False</setting>
       <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="UseSolutionBuilder">False</setting>
     </boolean>
   </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="public" priority="11" />
@@ -163,7 +164,7 @@
       <Item value="ShoutcastIntegration" priority="0" />
       <Item value="GetBy" priority="2" />
       <Item value="parameter" priority="0" />
-      <Item value="Empty" priority="8" />
+      <Item value="Empty" priority="9" />
       <Item value="parameters" priority="1" />
       <Item value="SEARCH_CMD" priority="1" />
       <Item value="case" priority="0" />
@@ -197,7 +198,7 @@
       <Item value="ScrollOwner" priority="0" />
       <Item value="MouseWheel" priority="3" />
       <Item value="Method" priority="0" />
-      <Item value="" priority="16" />
+      <Item value="" priority="17" />
       <Item value="Delta" priority="0" />
       <Item value="stationsScrollViewer" priority="4" />
       <Item value="StationsListView_OnMouseWheel" priority="0" />
@@ -228,7 +229,7 @@
       <Item value="CurrentThread" priority="2" />
       <Item value="Control" priority="0" />
       <Item value="dispatcher" priority="1" />
-      <Item value="IsAlive" priority="7" />
+      <Item value="IsAlive" priority="8" />
       <Item value="SynchronizedObservableCollection" priority="0" />
       <Item value="stations" priority="0" />
       <Item value="IBookmarkManager" priority="0" />
@@ -291,7 +292,7 @@
       <Item value="_stream" priority="1" />
       <Item value="Clear" priority="4" />
       <Item value="ReadOnlySynchronizedObservableCollection" priority="2" />
-      <Item value="Invoke" priority="1" />
+      <Item value="Invoke" priority="2" />
       <Item value="T" priority="1" />
       <Item value="index" priority="1" />
       <Item value="items" priority="0" />
@@ -416,35 +417,10 @@
       <Item value="StationConnectionChecker" priority="0" />
       <Item value="stationConnectionChecker" priority="0" />
       <Item value="start" priority="0" />
+      <Item value="PropertyChanged" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Controls.TextBox">
       <Item value="LostFocus" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
-  <CodeCleanup RecentlyUsed="nym">
-    <Profile name="nym">
-      <CSArrangeThisQualifier>True</CSArrangeThisQualifier>
-      <CSRemoveCodeRedundancies>True</CSRemoveCodeRedundancies>
-      <CSUseAutoProperty>True</CSUseAutoProperty>
-      <CSMakeFieldReadonly>True</CSMakeFieldReadonly>
-      <CSUseVar>
-        <BehavourStyle>CAN_CHANGE_TO_EXPLICIT</BehavourStyle>
-        <LocalVariableStyle>ALWAYS_EXPLICIT</LocalVariableStyle>
-        <ForeachVariableStyle>ALWAYS_EXPLICIT</ForeachVariableStyle>
-      </CSUseVar>
-      <CSUpdateFileHeader>False</CSUpdateFileHeader>
-      <VBOptimizeImports>False</VBOptimizeImports>
-      <VBShortenReferences>False</VBShortenReferences>
-      <CSOptimizeUsings>
-        <OptimizeUsings>True</OptimizeUsings>
-        <EmbraceInRegion>False</EmbraceInRegion>
-        <RegionName>
-        </RegionName>
-      </CSOptimizeUsings>
-      <CSShortenReferences>True</CSShortenReferences>
-      <VBReformatCode>False</VBReformatCode>
-      <CSReformatCode>True</CSReformatCode>
-      <CSReorderTypeMembers>True</CSReorderTypeMembers>
-    </Profile>
-  </CodeCleanup>
 </Configuration>
